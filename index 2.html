@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2e7d32);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 { margin: 0 0 10px; font-size: 2.5rem; }
+        header p { font-size: 1.2rem; }
+        nav { background-color: #333; }
+        nav ul { display: flex; justify-content: center; list-style: none; padding: 0; margin: 0; }
+        nav ul li { margin: 0 20px; }
+        nav ul li a { text-decoration: none; color: white; font-weight: bold; padding: 15px 0; display: block; }
+        nav ul li a:hover { color: #4CAF50; }
+        main { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        section { background-color: white; padding: 30px 20px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        section h2 { color: #2e7d32; }
+        section p { line-height: 1.6; }
+        button { background-color: #4CAF50; color: white; border: none; padding: 12px 25px; font-size: 16px; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+        button:hover { background-color: #388E3C; }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px 0; }
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            nav ul { flex-direction: column; }
+            nav ul li { margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Un sitio web simple, bonito y listo para publicar</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi sitio web. Aquí encontrarás información sobre mí, mis proyectos y cómo contactarme. Todo está listo para ver en cualquier dispositivo, ya que es completamente responsivo.</p>
+        </section>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un apasionado del desarrollo web y la creación de sitios atractivos y funcionales. Me gusta aprender nuevas tecnologías y hacer que la experiencia del usuario sea siempre clara y agradable.</p>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Aquí puedes mostrar tus proyectos, trabajos o ejemplos de tu creatividad. Cada sección puede tener imágenes, enlaces y descripciones para que los visitantes conozcan tu trabajo.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si quieres enviarme un mensaje, puedes hacerlo con este botón:</p>
+            <button onclick="alert('¡Gracias por tu mensaje! Me contactaré contigo pronto.')">Enviar Mensaje</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        console.log("Sitio cargado correctamente");
+    </script>
+</body>
+</html>
